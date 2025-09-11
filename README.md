@@ -26,7 +26,7 @@ A powerful and clean text analyzer that gives you full insights into your text �
 ## 🚀 Live Demo
 
 Try it here 👇  
-https://zeddy-foreal.github.io/text-analyzer
+https://zeddy-forreal.github.io/text-analyzer
 
 ## 📸 Preview
 
@@ -35,7 +35,7 @@ https://zeddy-foreal.github.io/text-analyzer
 ## 📁 How to Run Locally
 
 ```bash
-git clone https://github.com/zeddy-foreal/text-analyzer.git
+git clone https://github.com/zeddy-forreal/text-analyzer.git
 cd text-analyzer
 # Then open index.html in your browser
 
