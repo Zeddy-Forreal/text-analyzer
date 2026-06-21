@@ -2,86 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    <title>Landing Page</title>
-    <link rel="stylesheet" href="style/FontAwesome_Icons/all.min.css">
-    <link rel="stylesheet" href="style/FontAwesome_Icons/fontawesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Emu — Text Analyzer</title>
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="static/Font/font.css">
-    <link rel="icon" href="static/ST_brand/icon.png">
-
+    <link rel="icon" href="static/icon.png">
 </head>
 <body>
 
+    <header>
+        <div class="logo"><span class="logo-mark">¶</span>Emu</div>
+        <button class="mode" title="Toggle theme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+            </svg>
+        </button>
+    </header>
 
-        <header>
-            <div class="logo">Text Analyzer</div>
-            <button class="mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
-        </header>
+    <section class="title">
+        <h1 class="kinetic-headline" aria-label="ANALYZE YOUR TEXT">
+            <span class="kw">ANALYZE</span><span class="kw">YOUR</span><span class="kw">TEXT</span>
+        </h1>
+        <h3>Easily analyze any text in seconds. Get detailed insights like word count, character count, estimated reading time, sentence structure, and more. Whether you're writing, editing, or just curious — this tool helps you understand your text better and faster.</h3>
+    </section>
 
-        <section class="title">
-            <h1>ANALYZE YOUR TEXT</h1>
-            <h3>Easily analyze any text in seconds. Get detailed insights like word count, character count, estimated reading time, sentence structure, and more. Whether you're writing, editing, or just curious — this tool helps you understand your text better and faster.</h3>
-        </section>
-        <section class="field">
+    <section class="field">
 
+        <div class="field-head">
+            <span class="field-label">// input</span>
+            <span class="field-hint">paste or type below</span>
+        </div>
 
-                <textarea name="" id="" placeholder="Type here.. [ or copy your text here ]"></textarea>
-                
- 
-            
-            <div class="number">
-                <div>
-                    <input type="number" name="number" placeholder="size">
-                    <button class="trim"><i class="fa-solid fa-scissors"></i></button>
-                    <div class="face">
-                        <p ><i class="fa-solid fa-exclamation"></i></p>
-                    </div>
-                </div>
-                <div>
-                    <button class="clear"><i class="fa-solid fa-eraser"></i></button>
-                    <button class="start"><i class="fa-solid fa-play"></i></button>
+        <textarea name="" id="" placeholder="Type here.. [ or copy your text here ]"></textarea>
+
+        <div class="number">
+            <div>
+                <input type="number" name="number" placeholder="size">
+                <button class="trim" title="Trim to size">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M14 17a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M9.15 14.85l8.85 -10.85" /><path d="M6 4l8.85 10.85" /></svg>
+                </button>
+                <div class="face">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 19v.01" /><path d="M12 15v-10" /></svg></p>
                 </div>
             </div>
-
-        </section>
-
-        <section class="stats">
-
-            <div class="data">
-                <div>
-                    <p class="letters num ">00</p>
-                    <p>Characters</p>
-                </div>
-                <i class="fa-solid fa-a"></i>
+            <div>
+                <button class="clear" title="Clear all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M19 20h-10.5l-4.21 -4.3a1 1 0 0 1 0 -1.41l10 -10a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41l-9.2 9.3" />
+                        <path d="M18 13.3l-6.3 -6.3" />
+                    </svg>
+                </button>
+                <button class="start" title="Analyze">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 4v16l13 -8l-13 -8" /></svg>
+                </button>
             </div>
+        </div>
 
-            <div class="data">
-                <div>
-                    <p class="words num">00</p>
-                    <p>words</p>
-                </div>
-               <i class="fa-solid fa-b"></i>
+    </section>
+
+    <section class="stats">
+
+        <div class="data">
+            <span class="data-tag">01</span>
+            <div>
+                <p class="letters num">00</p>
+                <p>Characters</p>
             </div>
+            <span class="data-Emu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-abc">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M3 16v-6a2 2 0 1 1 4 0v6" />
+	<path d="M3 13h4" />
+	<path d="M10 8v6a2 2 0 1 0 4 0v-1a2 2 0 1 0 -4 0v1" />
+	<path d="M20.732 12a2 2 0 0 0 -3.732 1v1a2 2 0 0 0 3.726 1.01" />
+</svg></span>
+        </div>
 
-            <div class="data">
-                <div>
-                    <p class="spaces num">00</p>
-                    <p>Spaces</p>
-                </div>
-                <i class="fa-solid fa-c"></i>
+        <div class="data">
+            <span class="data-tag">02</span>
+            <div>
+                <p class="words num">00</p>
+                <p>Words</p>
             </div>
+            <span class="data-Emu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-blocks">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M14 4a1 1 0 0 1 1 -1h5a1 1 0 0 1 1 1v5a1 1 0 0 1 -1 1h-5a1 1 0 0 1 -1 -1l0 -5" />
+	<path d="M3 14h12a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h3a2 2 0 0 1 2 2v12" />
+</svg></span>
+        </div>
 
+        <div class="data">
+            <span class="data-tag">03</span>
+            <div>
+                <p class="spaces num">00</p>
+                <p>Spaces</p>
+            </div>
+            <span class="data-Emu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-ruler-measure">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M19.875 12c.621 0 1.125 .512 1.125 1.143v5.714c0 .631 -.504 1.143 -1.125 1.143h-15.875a1 1 0 0 1 -1 -1v-5.857c0 -.631 .504 -1.143 1.125 -1.143h15.75" />
+	<path d="M9 12v2" />
+	<path d="M6 12v3" />
+	<path d="M12 12v3" />
+	<path d="M18 12v3" />
+	<path d="M15 12v2" />
+	<path d="M3 3v4" />
+	<path d="M3 5h18" />
+	<path d="M21 3v4" />
+</svg></span>
+        </div>
+
+    </section>
+
+    <section class="density">
+        <header>Character Density</header>
+        <section class="letter_dens">
+            <div class="empty-state">
+                <span class="empty-Emu">?</span>
+                <p>Run an analysis to see your character breakdown</p>
+            </div>
         </section>
+    </section>
 
-        <section class="density">
-            <header>Character Desnity</header>
-            <section class="letter_dens">
- 
-                <i class="fa-solid fa-face-dizzy saddy"></i>
-            </section>
-        </section>
+    <footer class="page-footer">
+        <p>Emu — built for writers, editors, and the relentlessly curious.</p>
+    </footer>
 
-
-    <script src="javascript/main.js"></script>
+    <script src="script/main.js"></script>
 </body>
 </html>
